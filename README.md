@@ -2,17 +2,18 @@
 
 ### Final course project "ML in business"
 
-Stack:
+**Stack:**
 
-ML: sklearn, pandas, numpy, matplotlib
-API: flask
-VM: docker
-Data from kaggle: https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data
+- ML: sklearn, pandas, numpy, matplotlib
+- API: flask
+- VM: docker
+- Data from kaggle: https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data
 
-Task: predict different types of of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification.
+**Task:** 
+Predict different types of of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification.
+
 
 Only one feature:
-
 - comment_text (text)
 
 
