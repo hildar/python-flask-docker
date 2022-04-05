@@ -11,9 +11,9 @@
 
 
 **Task:** 
-Predict different types of of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification.
+Predict different types of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification.
 
-![Probability distribution](probs.png)
+![Probability distribution](example_probs.png)
 
 
 Only one feature:
@@ -24,29 +24,41 @@ Feature transform:
 - regex clean
 - tfidf
 
-Model: logreg
+Model: Logistic regression
 
-## Clone git and make docker image
+## User guide
+
+### 1. Prepare
+
+1.1 Clone git:
 ```
 $ git clone https://github.com/hildar/python-flask-docker.git
 $ cd python-flask-docker/docker
+```
+
+1.2 Download  ML model [logreg_pipeline.dill](https://drive.google.com/file/d/1VqY_LIvb5O4PjSaqMh7vmU3XOE4Ui8cr/view?usp=sharing) and put at the folder `app/models/`;
+
+
+1.3 Make docker image:
+```
 $ docker build -t python-flask-docker app/
 ```
 
-## Run docker container
+1.4 Run docker container:
 ```
 $ docker run -d -p 8180:8180 -p 8181:8181 python-flask-docker
 ```
 
-## Usage
+
+### 2. Usage
 
 Now, there are two ways: 
 
 #### 1-st way
 
-Go to the address [https://localhost:8180](https://localhost:8180) and use front server. You can manually type some comment at the web form.
+Go to the address [http://localhost:8180](http://localhost:8180) and use front server. You can manually type some comment at the web form.
 
 #### 2-nd way
 
-Use Jupiter Notebook "Clien.ipynb" and step by step check server.
+Use Jupiter Notebook "Client.ipynb" and step by step check server.
 
