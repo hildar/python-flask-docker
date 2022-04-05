@@ -13,7 +13,7 @@
 **Task:** 
 Predict different types of of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification.
 
-
+![Probability distribution](probs.png)
 
 
 Only one feature:
