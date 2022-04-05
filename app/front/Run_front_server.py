@@ -5,6 +5,8 @@ from flask_wtf import FlaskForm
 from requests.exceptions import ConnectionError
 from wtforms import StringField
 from wtforms.validators import DataRequired
+# import matplotlib.pyplot as plt
+# import numpy as np
 
 import urllib.request
 import json
@@ -54,11 +56,26 @@ def predict_form():
         data['comment_text'] = request.form.get('comment_text')
 
         try:
-            response = str([round(i, 3) for i in get_prediction(data['comment_text'])])
-            # print(response)
+            preds = get_prediction(data['comment_text'])
+
+            # Draw probabilities distribution.
+            # It is working in my machine, but not work in docker.
+            # color = ['red', 'blue', 'green', 'yellow', 'black', 'orange']
+            # columns = np.array(['tx', 's_tx', 'obs', 'thr', 'ins', 'i_ht'])
+            # plt.ioff()
+            # plt.subplots(figsize=(4, 2))
+            # plt.ylim(0, 1)
+            # plt.bar(columns, np.array(preds), color=color)
+            # plt.title('Probabilities')
+            # plt.savefig('static/probabilities.png')
+            # plt.close()
+
+            response = str([round(i, 2) for i in preds])
         except ConnectionError:
             response = json.dumps({"error": "ConnectionError"})
+
         return redirect(url_for('predicted', response=response))
+
     return render_template('form.html', form=form)
 
 
