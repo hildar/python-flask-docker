@@ -7,10 +7,13 @@
 - ML: sklearn, pandas, numpy, matplotlib
 - API: flask
 - VM: docker
-- Data from kaggle: https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data
+- Data from kaggle: [Jigsaw Toxic comment competition](https://drive.google.com/file/d/1Vdj89P-V11ipZOCFpeM3ggWVWq3O29sj/view?usp=sharing)
+
 
 **Task:** 
 Predict different types of of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification.
+
+
 
 
 Only one feature:
@@ -41,7 +44,7 @@ Now, there are two ways:
 
 #### 1-st way
 
-Go to the address https://127.0.0.1:8180 and use front server. You can manually type some comment at the web form.
+Go to the address [https://localhost:8180](https://localhost:8180) and use front server. You can manually type some comment at the web form.
 
 #### 2-nd way
 
