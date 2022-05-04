@@ -133,3 +133,4 @@ dmypy.json
 *toxic.csv
 
 # Big project model.dill file
+.dill
