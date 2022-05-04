@@ -38,6 +38,9 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# Logger RotatingFileHandler for front server
+*.log.*
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
