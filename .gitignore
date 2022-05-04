@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Big project csv files
+*train.csv
+*toxic.csv
