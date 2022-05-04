@@ -33,7 +33,6 @@ Model: Logistic regression
 1.1 Clone git:
 ```
 $ git clone https://github.com/hildar/python-flask-docker.git
-$ cd python-flask-docker/docker
 ```
 
 1.2 If you have some problem with download ML model yon can download it from [logreg_pipeline.dill](https://drive.google.com/file/d/1VqY_LIvb5O4PjSaqMh7vmU3XOE4Ui8cr/view?usp=sharing) and put at the folder `app/models/`;
@@ -41,6 +40,7 @@ $ cd python-flask-docker/docker
 
 1.3 Make docker image:
 ```
+$ cd python-flask-docker/docker
 $ docker build -t python-flask-docker app/
 ```
 
