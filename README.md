@@ -54,11 +54,11 @@ $ docker run -d -p 8180:8180 -p 8181:8181 python-flask-docker
 
 Now, there are two ways: 
 
-#### 1-st way
+#### 1-st one - Front server
 
 Go to the address [http://localhost:8180](http://localhost:8180) and use front server. You can manually type some comment at the web form.
 
-#### 2-nd way
+#### 2-nd one - Jupiter Notebook
 
 Use Jupiter Notebook "Client.ipynb" and step by step check server.
 
