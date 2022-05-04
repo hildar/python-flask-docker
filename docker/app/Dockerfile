@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:latest
 LABEL maintainer="khusainov.ildar.rish@gmail.com"
 RUN apt-get update -y
 RUN apt-get install -y python3-pip python3-dev build-essential
