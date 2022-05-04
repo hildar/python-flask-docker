@@ -134,3 +134,6 @@ dmypy.json
 
 # Big project model.dill file
 .dill
+
+# MacOS files
+.DS_Store
