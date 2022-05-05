@@ -1,11 +1,12 @@
-# USAGE
-# Start the server:
+#  USAGE
+#  Start the server:
 #  python Run_server.py
-# Submit a request via Python:
+#  Submit a request via Python:
 #  "Client.ipynb" or "Run_front_server.py"
 
-# import the necessary packages
-# module string is using into model.dill
+#  import the necessary packages
+
+#  module string is using into model.dill
 import string
 import pandas as pd
 import os
