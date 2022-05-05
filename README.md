@@ -62,5 +62,5 @@ Go to the address [http://localhost:8180](http://localhost:8180) and use front s
 
 #### 2-nd one - Jupiter Notebook
 
-Use Jupiter Notebook "Client.ipynb" and step by step check server.
+Use Jupiter Notebook "Client.ipynb" and step by step check server located [http://localhost:8181](http://localhost:8181).
 
