@@ -1,10 +1,10 @@
-#  USAGE
-#  Start the server:
-#  python Run_server.py
-#  Submit a request via Python:
-#  "Client.ipynb" or "Run_front_server.py"
+# USAGE
+# Start the server:
+# python Run_server.py
+# Submit a request via Python:
+# "Client.ipynb" or "Run_front_server.py"
 
-#  import the necessary packages
+# import the necessary packages
 
 #  module string is using into model.dill
 import string
