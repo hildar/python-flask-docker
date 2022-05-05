@@ -1,10 +1,12 @@
 # python-flask-docker
 
-### Final course project "ML in business" - Toxic comments
+## Toxic comments
+
+### Final course project "ML in business"
 
 **Stack:**
 
-- ML: sklearn, pandas, numpy, matplotlib
+- ML: NLP, XGBoost, TF-IDF, sklearn, pandas, numpy, matplotlib
 - API: flask
 - VM: docker
 - Data from kaggle: [Jigsaw Toxic comment competition](https://drive.google.com/file/d/1Vdj89P-V11ipZOCFpeM3ggWVWq3O29sj/view?usp=sharing)
