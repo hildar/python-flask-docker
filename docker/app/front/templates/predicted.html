@@ -10,9 +10,9 @@
             </div>
             <div class="card-body">
 
-                <p class="card-text">Table of probabilities:</p>
+                <p class="card-text">Table of probabilities being offensive by comment:</p>
                 <table border="1">
-                   <caption>Probabilities of bieng offensive</caption>
+                   <div>&quot;{{response['comment_text']}}&quot;</div> <br>
                    <tr>
                        <th> toxic </th>
                        <th> severe_toxic </th>
@@ -22,14 +22,14 @@
                        <th> identity_hate </th>
                    </tr>
                    <tr>
-                       <td>{{ response[0] }}</td>
-                       <td>{{ response[1] }}</td>
-                       <td>{{ response[2] }}</td>
-                       <td>{{ response[3] }}</td>
-                       <td>{{ response[4] }}</td>
-                       <td>{{ response[5] }}</td>
+                       <td>{{ response['0'] }}</td>
+                       <td>{{ response['1'] }}</td>
+                       <td>{{ response['2'] }}</td>
+                       <td>{{ response['3'] }}</td>
+                       <td>{{ response['4'] }}</td>
+                       <td>{{ response['5'] }}</td>
                    </tr>
-                </table>
+                </table><br>
 
 <!--                <div class="card-body">-->
 <!--                    <img src="/static/probabilities.png">-->

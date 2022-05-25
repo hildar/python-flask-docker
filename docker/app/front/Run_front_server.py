@@ -85,12 +85,15 @@ def predict_form():
             # plt.close()
 
             # round predictions
-            response = str([round(i, 2) for i in preds])
+            preds = [round(i, 2) for i in preds]
+            # convert to dict
+            response = {i: preds[i] for i in range(len(preds))}
+            response['comment_text'] = data['comment_text']
         except ConnectionError:
             response = json.dumps({"error": "ConnectionError"})
 
         # go to predicted.html
-        return redirect(url_for('predicted', response=response))
+        return redirect(url_for('predicted', response=json.dumps(response)))
 
     # render predict_form.html
     return render_template('form.html', form=form)
