@@ -58,7 +58,9 @@ Now, there are two ways:
 
 #### 1-st one - Front server
 
-Go to the address [http://localhost:8180](http://localhost:8180) and use front server. You can manually type some comment at the web form.
+Go to the address [http://localhost:8180](http://localhost:8180) and use front server. You can manually type some comment at the web form and enjoy the result:
+
+![Example front page](example_front.png)
 
 #### 2-nd one - Jupiter Notebook
 
