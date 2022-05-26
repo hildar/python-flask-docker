@@ -12,7 +12,7 @@
 **Task:** 
 Create detect system (back-end and front-end servers) for predict different types of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification and multi-targets.
 
-![Probability distribution](example_probs.png)
+<img src="example_probs.png" alt="example_probs" width="400"/>
 
 
 Only one feature:
@@ -58,7 +58,7 @@ Now, there are two ways:
 
 Go to the address [http://localhost:8180](http://localhost:8180) and use front server. You can manually type some comment at the web form and enjoy the result:
 
-![Example front page](example_front.png)
+<img src="example_front.png" alt="example_front" width="700"/>
 
 #### 2-nd one - Jupiter Notebook
 
