@@ -1,5 +1,3 @@
-# python-flask-docker
-
 ## Toxic comments
 
 ### Final course project "ML in business"
