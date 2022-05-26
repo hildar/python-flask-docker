@@ -1,17 +1,16 @@
-## Toxic comments
+## Toxic comments detect system
 
-### Final course project "ML in business"
 
 **Stack:**
 
 - ML: NLP, XGBoost, TF-IDF, sklearn, pandas, numpy, matplotlib
-- API: flask
-- VM: docker
+- API: Flask, Flask_wtf
+- VM: Docker
 - Data from kaggle: [Jigsaw Toxic comment competition](https://drive.google.com/file/d/1Vdj89P-V11ipZOCFpeM3ggWVWq3O29sj/view?usp=sharing)
 
 
 **Task:** 
-Predict different types of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification.
+Create detect system (back-end and front-end servers) for predict different types of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification and multi-targets.
 
 ![Probability distribution](example_probs.png)
 
@@ -24,7 +23,8 @@ Feature transform:
 - regex clean
 - tfidf
 
-Model: Logistic regression
+ML algorithm: Logistic regression
+
 
 ## User guide
 
@@ -35,7 +35,7 @@ Model: Logistic regression
 $ git clone https://github.com/hildar/python-flask-docker.git
 ```
 
-1.2 If you have some problem with download ML model yon can download it from [logreg_pipeline.dill](https://drive.google.com/file/d/1VqY_LIvb5O4PjSaqMh7vmU3XOE4Ui8cr/view?usp=sharing) and put at the folder `app/models/`;
+1.2 If you have some problem with downloading ML model yon can download it from [logreg_pipeline.dill](https://drive.google.com/file/d/1VqY_LIvb5O4PjSaqMh7vmU3XOE4Ui8cr/view?usp=sharing) or create it from [train.ipynb](https://github.com/hildar/python-flask-docker/blob/main/Train.ipynb) file and put at the folder `app/models/`;
 
 
 1.3 Make docker image:
