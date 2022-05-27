@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file docker/app/Dockerfile --tag my-toxic:$(date +%s) app/
+      run: docker build docker/app/ --file Dockerfile --tag my-toxic:$(date +%s)
