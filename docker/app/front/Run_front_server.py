@@ -12,7 +12,9 @@ from wtforms import StringField
 from wtforms.validators import DataRequired
 import urllib.request
 import json
-
+# Fof show image probabilities
+import matplotlib.pyplot as plt
+import numpy as np
 
 # create form fo text input and validate not empty field
 class ClientDataForm(FlaskForm):
@@ -73,6 +75,18 @@ def predict_form():
         try:
             # get predictions list from main server
             preds = get_prediction(data['comment_text'])
+
+            # Draw probabilities distribution.
+            # It is working in my machine, but not yet work into docker.
+            color = ['red', 'blue', 'green', 'yellow', 'black', 'orange']
+            columns = np.array(['tx', 's_tx', 'obs', 'thr', 'ins', 'i_ht'])
+            plt.ioff()
+            plt.subplots(figsize=(4, 2))
+            plt.ylim(0, 1)
+            plt.bar(columns, np.array(preds), color=color)
+            plt.title('Probabilities')
+            plt.savefig('static/probabilities.png')
+            plt.close()
 
             # round predictions
             preds = [round(i, 2) for i in preds]
