@@ -1,15 +1,19 @@
-import json
+# USAGE
+# Start the server:
+# pyrhon Run_front_server.py
+# Go to the http://localhost:8180
+# Enjoy
 
+# import the necessary packages
 from flask import Flask, render_template, redirect, url_for, request
 from flask_wtf import FlaskForm
 from requests.exceptions import ConnectionError
 from wtforms import StringField
 from wtforms.validators import DataRequired
-# import matplotlib.pyplot as plt
-# import numpy as np
-
 import urllib.request
 import json
+# import matplotlib.pyplot as plt
+# import numpy as np
 
 
 # create form fo text input and validate not empty field
