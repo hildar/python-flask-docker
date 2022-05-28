@@ -1,7 +1,7 @@
 ## Toxic comments detect system
 
 
-**Stack:**
+#### Stack:
 
 - ML: NLP, XGBoost, TF-IDF, sklearn, pandas, numpy, matplotlib
 - API: Flask, Flask_wtf
@@ -9,7 +9,7 @@
 - Data from kaggle: [Jigsaw Toxic comment competition](https://drive.google.com/file/d/1Vdj89P-V11ipZOCFpeM3ggWVWq3O29sj/view?usp=sharing)
 
 
-**Task:** 
+#### Task:
 Create detect system (back-end and front-end servers) for predict different types of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification and multi-targets.
 
 <img src="example_probs.png" alt="example_probs" width="400"/>
