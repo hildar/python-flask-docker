@@ -10,7 +10,7 @@
 
 
 #### Task:
-Create detect system (back-end and front-end servers) for predict different types of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification and multi-targets.
+Create detect system (back-end and front-end servers) for predict different types of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification and multi-targets. All steps you can see in main file [train.ipynb](https://github.com/hildar/python-flask-docker/blob/main/Train.ipynb).
 
 <img src="example_probs.png" alt="example_probs" width="400"/>
 
