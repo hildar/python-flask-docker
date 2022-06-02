@@ -23,8 +23,6 @@ Feature transform:
 - regex clean
 - tfidf
 
-ML algorithm: Logistic regression
-
 
 ## User guide
 
