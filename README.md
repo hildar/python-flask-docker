@@ -1,4 +1,13 @@
-## Toxic comments detect system
+# Toxic comments detect system
+
+## About
+
+The detection system to predict different types of toxicity. This project uses **NLP** (**TF-IDF**) and **XGBoost**. Set up
+**back-end** and **front-end** servers via **Flask**, and wrapped them in **Docker**. Binary classification and multi-targets.
+
+All steps you can see in main file [train.ipynb](https://github.com/hildar/python-flask-docker/blob/main/Train.ipynb).
+
+<img src="example_probs.png" alt="example_probs" width="400"/>
 
 
 #### Stack:
@@ -9,15 +18,7 @@
 - Data from kaggle: [Jigsaw Toxic comment competition](https://drive.google.com/file/d/1Vdj89P-V11ipZOCFpeM3ggWVWq3O29sj/view?usp=sharing)
 
 
-#### Task:
-Create detect system (back-end and front-end servers) for predict different types of toxicity like threats, obscenity, insults, and identity-based hate. Binary classification and multi-targets. All steps you can see in main file [train.ipynb](https://github.com/hildar/python-flask-docker/blob/main/Train.ipynb).
-
-<img src="example_probs.png" alt="example_probs" width="400"/>
-
-
-Only one feature:
-- comment_text (text)
-
+Only one feature: comment_text (text)
 
 Feature transform: 
 - regex clean
